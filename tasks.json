@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build parking",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "${workspaceFolder}/parking.cpp",
+                "-o",
+                "${workspaceFolder}/parking.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
